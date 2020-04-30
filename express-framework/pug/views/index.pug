@@ -1,0 +1,34 @@
+html
+    head
+        title hello pug
+        body
+            - let scholl = 'anadolu university'
+            - let city = 'Istanbul'
+
+            | At Scholl :  #{scholl}
+            br
+            | Living in : #{city}
+            br
+
+            hr
+
+            - let num = 0
+                if !num
+                    | Invalid Number
+                else
+                    | Number equals to #{num}
+
+                hr
+
+        span(style="color:white; background-color:black")
+            | Hello Pug #{name} #{surname}
+
+        br
+        include footer
+            br
+            include other
+
+                br
+                each val,index in [1,2,3,4,5]
+                    | #{index} : #{val}
+                    br
